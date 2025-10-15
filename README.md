@@ -8,9 +8,9 @@
 
 This is a plugin for DokuWiki to support client side cryptography.
 
-* https://www.dokuwiki.org/plugin:dokucrypt2
+* https://www.dokuwiki.org/plugin:dokucrypt3
 * Licence: GPL-2.0 (https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-* Author: Originally by By Scott Moser. Maintained by Sherri Wheeler. (Twitter @SyntaxSeed. https://syntaxseed.com)
+* Author: Originally by By Scott Moser. Maintained by Thomas Schäfer (thomas@hilbershome.de). Previously maintained by Sherri Wheeler (dokucrypt2)
 
 > **!! Warning:** This plugin should not replace a password manager or peer reviewed cryptography tools for high-priority use. Do not store mission critical type data with this plugin - I cannot be sure that the info is not cached by DokuWiki or the web browser.
 
@@ -34,14 +34,4 @@ This plugin includes configuration settings.
 
 ## ChangeLog
 
-* 2024-05-01: PR from **t-oster** to prevent bugs when encrypted text contains html.
-* 2022-08-08: Added ability and setting for copying the contents to the clipboard on decrypt.
-  * Contributed by Thomas Schäfer (https://github.com/ternite).
-* 2022-02-02: Preparatory fixes/testing for PHP 8. Improvements for code style PSRs.
-* 2021-05-18: Fix for internal link edit toolbar button. Issue #12.
-* 2021-03-03: Add wrapping for the pre tag. Contributed by dustin-something.
-* 2020-10-19: Formatting changes, add CSS classes, collapse by default.
-* 2020-10-14: Temp fix for Dokuwiki 2020-07-29 "Hogfather". DecryptSecret button was not appearing on page edit.
-* 2020-02-07: Updated for PHP v 7+.
-* 2017-11-08: Fixed an issue with the heading buttons 'PATCH 1' required (above). Added plugin info text file.
-* 2017-06-25: Fork the original plugin. Patch it up. Release for most recent DokuWiki version. Cheers!
+* 2025-10-15: Release of dokucrypt3, which has originally been an internal fork of dokucrypt2 with massive changes to the way encryption is handled. The resulting pull request would not be merged into the base repository (due to maintenance effort). So a new github repository `dokucrypt3` was created based on dokucrypt2 and the new encryption engine.

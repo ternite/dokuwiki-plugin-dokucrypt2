@@ -285,9 +285,9 @@ function toggleCryptDiv(elemid,lock,ctext) {
           //put it into the clipboard
           copyToClipboard(ptext).then(() => {
             if (JSINFO['plugin_dokucrypt2_CONFIG_hidepasswordoncopytoclipboard']) {
-              elem.innerHTML = "{" + JSINFO['plugin_dokucrypt2_TEXT_copied_to_clipboard'] + "}";
+              elem.textContent = "{" + JSINFO['plugin_dokucrypt2_TEXT_copied_to_clipboard'] + "}";
             } else {
-              elem.innerHTML += " {" + JSINFO['plugin_dokucrypt2_TEXT_copied_to_clipboard'] + "}";
+              elem.textContent += " {" + JSINFO['plugin_dokucrypt2_TEXT_copied_to_clipboard'] + "}";
             };
             console.log('Encrypted value has been copied to the clipboard.');
           }).catch(() => {
